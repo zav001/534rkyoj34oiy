@@ -1,0 +1,22 @@
+/* DonutClient blue redesign */
+:root {
+  --donut-blue: #1683ff;
+  --donut-blue-bright: #38a0ff;
+  --donut-navy: #030b1c;
+  --donut-panel: #07172f;
+  --donut-text: #eef6ff;
+  --donut-muted: #9db3cf;
+}
+body {
+  background: var(--donut-navy);
+  color: var(--donut-text);
+}
+a, .accent, .highlight { color: var(--donut-blue); }
+button, .download-button, .cta {
+  background: linear-gradient(135deg, var(--donut-blue), #0866d8);
+  box-shadow: 0 8px 30px rgba(22,131,255,.25);
+}
+.card, .feature-card, .panel {
+  background: linear-gradient(145deg, rgba(7,23,47,.96), rgba(3,12,29,.96));
+  border-color: rgba(22,131,255,.28);
+}
