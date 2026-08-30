@@ -1,13 +1,13 @@
-# Goobaa Client — DonutSMP 1.21.11 Website
+# DonutClient — DonutSMP 1.21.11 Website
 
-A static, responsive landing page for Goobaa Client, built for DonutSMP on Minecraft 1.21.11.
+A static, responsive landing page for DonutClient, built for DonutSMP on Minecraft 1.21.11.
 
 ## Download setup
 
 The site uses a **direct GitHub Release asset URL** for the Download buttons. Visitors are sent straight to the `.jar` download instead of the repository homepage.
 
 Current download:
-`https://github.com/zav001/D3et2t23y3/releases/download/v1/GoobaaClient.1.21.11.jar`
+`https://github.com/zav001/D3et2t23y3/releases/download/v1/DonutClient-1.21.11.jar`
 
 ### Important privacy note
 

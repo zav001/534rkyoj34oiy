@@ -1,7 +1,7 @@
 {
-  "name": "Gooba Client \u2014 DonutSMP 1.21.11",
-  "short_name": "Gooba Client",
-  "description": "Gooba Client for DonutSMP \u2014 Minecraft 1.21.11.",
+  "name": "DonutClient \u2014 DonutSMP 1.21.11",
+  "short_name": "DonutClient",
+  "description": "DonutClient for DonutSMP \u2014 Minecraft 1.21.11.",
   "icons": [
     {
       "src": "/favicon-32.png",
@@ -14,7 +14,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0b0614",
-  "background_color": "#0b0614",
+  "theme_color": "#07090d",
+  "background_color": "#07090d",
   "display": "standalone"
 }
