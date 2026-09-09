@@ -1,0 +1,3 @@
+Put your Minecraft client JAR in this folder and name it DonutClient.jar.
+Then upload/deploy the whole folder to your website hosting/GitHub Pages.
+The Download button is configured to download /DonutClient.jar.
