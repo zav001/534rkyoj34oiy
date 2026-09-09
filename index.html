@@ -1,216 +1,132 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
-  <link rel="manifest" href="site.webmanifest">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07090d">
-  <meta name="description" content="DonutClient for DonutSMP — Minecraft 1.21.11 Fabric client.">
-  <title>DonutClient — DonutSMP 1.21.11</title>
+  <meta name="description" content="DonutClient — a lightweight Minecraft client for DonutSMP.">
+  <title>DonutClient — DonutSMP Client</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="site-glow glow-one"></div>
-  <div class="site-glow glow-two"></div>
-
-  <header class="nav-wrap" id="top">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#home">
-        <img src="assets/donutclient-logo.png" alt="" class="brand-mark">
-        <span>DonutClient</span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <div class="nav-links" id="nav-links">
-        <a class="active" href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#showcase">Showcase</a>
-        <a href="#installation">Installation</a>
-        <a href="#faq">FAQ</a>
-      <a class="nav-download" href="https://github.com/zav001/D3et2t23y3/releases/download/v1/DonutClient-1.21.11.jar" download="DonutClient-1.21.11.jar" rel="noopener">
-          <span>↓</span> Download DonutClient
-        </a>
-      </div>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="DonutClient home">
+      <span class="brand-mark">D</span><span>DONUTCLIENT</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#installation">Installation</a>
+      <a href="#faq">FAQ</a>
     </nav>
+    <a class="nav-download" href="#download">↓ Download</a>
+    <button class="menu" aria-label="Open menu">☰</button>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">DONUTSMP CLIENT · FABRIC <span>1.21.11</span></div>
-          <h1><em>DONUT</em><br>CLIENT</h1>
-          <p class="hero-lead">The Best DonutSMP Client</p>
-          <p class="hero-body">80+ powerful modules. Optimized for DonutSMP. Free download for Fabric 1.21.11.</p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/zav001/D3et2t23y3/releases/download/v1/DonutClient-1.21.11.jar" download="DonutClient-1.21.11.jar" rel="noopener">
-              <span>↓</span> Download DonutClient
-            </a>
-            <a class="button button-secondary" href="#features">Explore Features <span>→</span></a>
-          </div>
-
-          <div class="compat">
-            <span>◆ Fabric</span><i></i><span>⬡ Minecraft 1.21.11</span><i></i><span>▣ Windows / macOS / Linux</span>
-          </div>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> DONUTSMP CLIENT · FABRIC 1.21.11</p>
+        <h1>DONUT<br><em>CLIENT</em></h1>
+        <p class="lead">A clean, powerful client built for DonutSMP. Fast, configurable, and designed to keep the useful stuff close without getting in your way.</p>
+        <div class="actions">
+          <a class="button primary" href="#download">↓ Download DonutClient</a>
+          <a class="button ghost" href="#features">Explore Features →</a>
         </div>
-
-        <div class="hero-visual reveal">
-          <div class="preview-glow"></div>
-          <div class="preview-frame">
-            <div class="preview-bar">
-              <div class="preview-brand"><img src="assets/donutclient-logo.png" alt=""> <span>DonutClient</span></div>
-              <div class="window-controls"><span>−</span><span>□</span><span>×</span></div>
-            </div>
-            <img src="assets/client-preview-reference.png" alt="DonutClient interface preview" class="preview-image">
+        <div class="platforms">
+          <span>◆ Fabric</span><span>⬡ Minecraft 1.21.11</span><span>▣ Windows / macOS / Linux</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="window-bar"><span></span><span></span><span></span><b>DONUTCLIENT</b></div>
+        <div class="mock-ui">
+          <aside><div class="mini-logo">D</div><div class="side active">⌂</div><div class="side">✦</div><div class="side">⚙</div></aside>
+          <div class="mock-main">
+            <div class="mock-top"><span>Dashboard</span><small>Fabric 1.21.11</small></div>
+            <div class="stats"><div><strong>80+</strong><small>Modules</small></div><div><strong>3ms</strong><small>UI response</small></div></div>
+            <div class="mock-panel"><span>Performance</span><b>Optimized</b><div class="meter"><i></i></div></div>
+            <div class="mock-panel"><span>Quick Controls</span><b>Enabled</b><div class="toggles"><i></i><i></i><i></i></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="trust">
-      <div class="container trust-card">
-        <div class="trust-item">
-          <strong>ϟ</strong>
-          <div><b>Lightweight</b><span>Built with performance in mind</span></div>
-        </div>
-        <div class="trust-item">
-          <strong>✦</strong>
-          <div><b>Fabric</b><span>Designed for the Fabric ecosystem</span></div>
-        </div>
-        <div class="trust-item">
-          <strong>&lt;/&gt;</strong>
-          <div><b>Configurable</b><span>Make the client fit your playstyle</span></div>
-        </div>
+    <section class="trust section">
+      <div><b>ϟ</b><span><strong>Lightweight</strong><small>Built with performance in mind</small></span></div>
+      <div><b>✦</b><span><strong>Fabric</strong><small>Designed for the Fabric ecosystem</small></span></div>
+      <div><b>&lt;/&gt;</b><span><strong>Configurable</strong><small>Make the client fit your playstyle</small></span></div>
+    </section>
+
+    <section id="features" class="section features">
+      <p class="eyebrow">FEATURES</p>
+      <h2>Everything you need.<br><span>Nothing you don't.</span></h2>
+      <p class="section-intro">Powerful features with a focus on performance, utility, and usability.</p>
+      <div class="feature-grid">
+        <article><div class="icon">ϟ</div><h3>Performance first</h3><p>Keep your gameplay smooth with a lightweight client experience.</p></article>
+        <article><div class="icon">✦</div><h3>Useful modules</h3><p>Put the tools you actually use one quick action away.</p></article>
+        <article><div class="icon">&lt;/&gt;</div><h3>Configurable</h3><p>Adjust your setup so DonutClient works the way you play.</p></article>
+        <article><div class="icon">◈</div><h3>Clean interface</h3><p>A focused UI that gives you information without clutter.</p></article>
       </div>
     </section>
 
-    <section class="section" id="features">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="kicker">FEATURES</span>
-          <h2>Everything you need.<br><em>Nothing you don't.</em></h2>
-          <p>80+ powerful modules built specifically for DonutSMP, with a focus on performance, utility, and usability.</p>
+    <section id="showcase" class="section showcase">
+      <div>
+        <p class="eyebrow">CLIENT PREVIEW</p>
+        <h2>Clean controls.<br><span>Fast access.</span></h2>
+        <p class="section-intro">DonutClient keeps useful information close while keeping the interface out of the way.</p>
+        <div class="points">
+          <div><b>01</b><span><strong>Utility first</strong><small>Useful tools without a cluttered interface.</small></span></div>
+          <div><b>02</b><span><strong>Quick controls</strong><small>Settings designed around fast access.</small></span></div>
+          <div><b>03</b><span><strong>Low clutter</strong><small>A focused experience with sensible defaults.</small></span></div>
         </div>
-        <div class="feature-grid" id="feature-grid"></div>
+      </div>
+      <div class="showcase-screen">
+        <div class="screen-header"><span>DonutClient</span><small>MODULES</small></div>
+        <div class="module-row"><span>FPS Boost</span><i class="on"></i></div>
+        <div class="module-row"><span>HUD</span><i class="on"></i></div>
+        <div class="module-row"><span>Coordinates</span><i class="on"></i></div>
+        <div class="module-row"><span>Notifications</span><i class="off"></i></div>
+        <div class="screen-footer">DONUTCLIENT · FABRIC / 1.21.11</div>
       </div>
     </section>
 
-    <section class="section showcase" id="showcase">
-      <div class="container showcase-grid">
-        <div class="showcase-copy reveal">
-          <span class="kicker">CLIENT PREVIEW</span>
-          <h2>Clean controls.<br><em>Fast access.</em></h2>
-          <p>DonutClient keeps useful information close while keeping the interface out of your way. The client preview uses the supplied DonutClient artwork so the site feels like the product it represents.</p>
-          <div class="preview-points">
-            <div><span>01</span><div><b>Utility first</b><small>Useful tools without a cluttered interface.</small></div></div>
-            <div><span>02</span><div><b>Quick controls</b><small>Settings designed around fast access.</small></div></div>
-            <div><span>03</span><div><b>Low clutter</b><small>A focused experience with sensible defaults.</small></div></div>
-          </div>
-        </div>
-
-        <div class="showcase-image reveal">
-          <img src="assets/client-preview-reference.png" alt="DonutClient utility interface">
-          <div class="image-caption"><span>DonutClient</span><span>FABRIC / 1.21.11</span></div>
-        </div>
+    <section id="installation" class="section install">
+      <p class="eyebrow">GET STARTED</p>
+      <h2>Install DonutClient<br><span>in 3 steps.</span></h2>
+      <p class="section-intro">Download the JAR, set up Fabric, then launch Minecraft with DonutClient in your mods folder.</p>
+      <div class="steps">
+        <article><b>01</b><div class="step-icon">↓</div><h3>Download JAR</h3><p>Get the latest DonutClient <code>.jar</code> from your release page.</p><a href="#download">Download →</a></article>
+        <article><b>02</b><div class="step-icon">✦</div><h3>Install Fabric</h3><p>Install Fabric Loader and Fabric API for Minecraft 1.21.11.</p><a href="https://fabricmc.net/use/installer/" target="_blank" rel="noopener">Fabric installer →</a></article>
+        <article><b>03</b><div class="step-icon">▶</div><h3>Launch & Play</h3><p>Place DonutClient in your <code>.minecraft/mods</code> folder and launch.</p><a href="#faq">Read FAQ →</a></article>
       </div>
     </section>
 
-    <section class="section installation" id="installation">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <span class="kicker">GET STARTED</span>
-          <h2>Install DonutClient<br><em>in 3 steps.</em></h2>
-          <p>Download the JAR, set up Fabric, then launch Minecraft with DonutClient in your mods folder.</p>
-        </div>
-
-        <div class="steps">
-          <article class="step reveal">
-            <span class="step-number">01</span>
-            <div class="step-icon">↓</div>
-            <h3>Download JAR</h3>
-            <p>Get the latest DonutClient <code>.jar</code> from the configured release asset.</p>
-            <a class="text-link" href="https://github.com/zav001/D3et2t23y3/releases/download/v1/DonutClient-1.21.11.jar" download="DonutClient-1.21.11.jar" rel="noopener">Download →</a>
-          </article>
-          <article class="step reveal">
-            <span class="step-number">02</span>
-            <div class="step-icon">✦</div>
-            <h3>Install Fabric</h3>
-            <p>Install Fabric Loader and Fabric API for Minecraft 1.21.11.</p>
-            <a class="text-link" href="https://fabricmc.net/use/installer/" target="_blank" rel="noopener">Fabric installer →</a>
-          </article>
-          <article class="step reveal">
-            <span class="step-number">03</span>
-            <div class="step-icon">▶</div>
-            <h3>Launch & Play</h3>
-            <p>Place DonutClient in your <code>.minecraft/mods</code> folder and launch the matching Fabric profile.</p>
-            <a class="text-link" href="#faq">Read FAQ →</a>
-          </article>
-        </div>
-
-        <div class="download-band reveal">
-          <div><span class="kicker">READY WHEN YOU ARE</span><h3>Download DonutClient.</h3></div>
-          <a class="button button-primary" href="https://github.com/zav001/D3et2t23y3/releases/download/v1/DonutClient-1.21.11.jar" download="DonutClient-1.21.11.jar" rel="noopener">Download DonutClient <span>↓</span></a>
-        </div>
-      </div>
+    <section id="download" class="cta section">
+      <div><p class="eyebrow">READY WHEN YOU ARE</p><h2>Download DonutClient.</h2><p>Put your release link in the button below and you're ready to ship.</p></div>
+      <a class="button primary big" href="https://github.com/" target="_blank" rel="noopener">Download DonutClient ↓</a>
     </section>
 
-    <section class="section compatibility-section">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <span class="kicker">COMPATIBILITY</span>
-          <h2>Works with your<br><em>favorite launcher.</em></h2>
-          <p>DonutClient is built for the Fabric ecosystem, so you can use the launcher setup that works best for you.</p>
-        </div>
-        <div class="launcher-grid">
-          <div class="launcher reveal"><b>Prism Launcher</b><span>Supported</span></div>
-          <div class="launcher reveal"><b>Modrinth App</b><span>Supported</span></div>
-          <div class="launcher reveal"><b>MultiMC</b><span>Supported</span></div>
-          <div class="launcher reveal"><b>Vanilla Launcher</b><span>Supported</span></div>
-          <div class="launcher reveal"><b>CurseForge</b><span>Supported</span></div>
-          <div class="launcher reveal"><b>Other Fabric Launchers</b><span>Compatible</span></div>
-        </div>
-      </div>
+    <section class="section compatibility">
+      <p class="eyebrow">COMPATIBILITY</p>
+      <h2>Works with your<br><span>favorite launcher.</span></h2>
+      <p class="section-intro">DonutClient is built for the Fabric ecosystem, so you can use the launcher setup that works best for you.</p>
+      <div class="launcher-grid"><span>Prism Launcher <b>Supported</b></span><span>Modrinth App <b>Supported</b></span><span>MultiMC <b>Supported</b></span><span>Vanilla Launcher <b>Supported</b></span><span>CurseForge <b>Supported</b></span><span>Other Fabric Launchers <b>Compatible</b></span></div>
     </section>
 
-    <section class="section faq" id="faq">
-      <div class="container faq-grid">
-        <div class="section-heading reveal">
-          <span class="kicker">FAQ</span>
-          <h2>Good to<br><em>know.</em></h2>
-          <p>Quick answers for getting DonutClient installed and running.</p>
-        </div>
-        <div class="accordion reveal" id="faq-list"></div>
+    <section id="faq" class="section faq">
+      <p class="eyebrow">FAQ</p><h2>Good to<br><span>know.</span></h2>
+      <div class="faq-list">
+        <details><summary>What is DonutClient?<b>+</b></summary><p>DonutClient is a Fabric-based Minecraft client concept focused on useful modules, performance, and a clean interface.</p></details>
+        <details><summary>Which Minecraft version does it support?<b>+</b></summary><p>This template is labeled for Fabric 1.21.11. Change the version text anywhere in the site to match your actual release.</p></details>
+        <details><summary>Where do I install the JAR?<b>+</b></summary><p>Put the client JAR in your Minecraft <code>.minecraft/mods</code> directory with the required Fabric dependencies.</p></details>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-main">
-      <div class="footer-brand">
-        <a class="brand" href="#top"><img src="assets/donutclient-logo.png" alt=""> <span>DonutClient</span></a>
-        <p>DonutClient for DonutSMP · Minecraft 1.21.11</p>
-      </div>
-      <div class="footer-links">
-        <a href="#home">Home</a><a href="#features">Features</a><a href="#installation">Installation</a><a href="#faq">FAQ</a>
-        <a href="https://github.com/zav001/D3et2t23y3/releases/download/v1/DonutClient-1.21.11.jar" download="DonutClient-1.21.11.jar" rel="noopener">Download</a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>© 2026 DonutClient</span>
-      <span>Independent project · Not affiliated with Mojang or Microsoft.</span>
-    </div>
-  </footer>
-
+  <footer><a class="brand" href="#home"><span class="brand-mark">D</span><span>DONUTCLIENT</span></a><span>DonutClient for DonutSMP · Minecraft 1.21.11</span><span>© 2026 DonutClient · Independent project</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
